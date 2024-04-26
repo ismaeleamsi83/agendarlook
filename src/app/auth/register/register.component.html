@@ -4,10 +4,10 @@
         <form [formGroup]="registerForm">
             <input type="text" class="form-control" placeholder="Nombre" formControlName="name" name="name" id="name">
             <input type="text" class="form-control mt-4" placeholder="Apellidos" formControlName="lastname" name="lastname" id="lastname">
-            <input type="email" class="form-control mt-4" placeholder="Email" name="email" id="email">
-            <input type="tel" class="form-control mt-4" placeholder="Teléfono" name="numberphone" id="numberphone">
-            <input type="password" class="form-control mt-4" placeholder="Contraseña" name="passw" id="passw">
-            <input type="password" class="form-control mt-4" placeholder="Repetir Contraseña" name="passwrep" id="passwrep">
+            <input type="email" class="form-control mt-4" placeholder="Email" formControlName="email" name="email" id="email">
+            <input type="tel" class="form-control mt-4" placeholder="Teléfono" formControlName="numberphone" name="numberphone" id="numberphone">
+            <input type="password" class="form-control mt-4" placeholder="Contraseña" formControlName="password" name="passw" id="passw">
+            <input type="password" class="form-control mt-4" placeholder="Repetir Contraseña" formControlName="confirmpassword" name="passwrep" id="passwrep">
             <div class="mt-3">
                 <input type="checkbox" class="form-check-input" name="remember" id="remember"/>
                 <label for="remember">&nbsp; Mantenme registrado</label>
@@ -17,3 +17,8 @@
         </form>
     </div>
 </div>
+@if(formSucces){
+<div #alertDiv [ngClass]="{'show-alert': registerForm}" class="alert alert-success position-absolute top-0 start-50 translate-middle-x mt-5 col-4  py-2 px-4 border border-secondary rounded-pill" role="alert">
+    Registrado correctamente! Ahora puedes acceder a tu cuenta de usuario.
+</div>
+}
