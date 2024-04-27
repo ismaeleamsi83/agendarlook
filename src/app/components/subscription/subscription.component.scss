@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 28px;
+}
+
+.content-subscriptions .div-content{
+    background-color: #F8F8F8;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 1px 6px gainsboro;
+    min-width: 300px;
+    max-width: 300px;
+    h2:nth-child(2){
+        color: #47C5D7;
+        text-shadow: 1px 1px 1px lightgray;
+    }
+    svg{
+        color: #47C5D7;
+    }
+    div{
+        text-align: left;
+        padding-bottom: 32px;
+    }
+    button{
+        background-color: #47C5D7;
+        color: #F8F8F8;
+        font-weight: 600;
+    }
+}

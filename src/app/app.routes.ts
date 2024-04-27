@@ -4,6 +4,7 @@ import { HomeComponent } from './components/home/home.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { MainComponent } from './components/main/main.component';
 import { ConfigurationComponent } from './components/configuration/configuration.component';
+import { SubscriptionComponent } from './components/subscription/subscription.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -11,7 +12,8 @@ export const routes: Routes = [
     { path: 'register', component: RegisterComponent },
     { path: 'home', component: HomeComponent, children:[
         { path: '', component: MainComponent },
-        { path: 'configuration', component: ConfigurationComponent }
+        { path: 'configuration', component: ConfigurationComponent },
+        { path: 'subscription', component: SubscriptionComponent }
     ]},
     
     
