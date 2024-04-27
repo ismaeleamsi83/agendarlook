@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+
+.content-configuration{
+    //width: 100% !important;
+}
+
+.bg-color-primary{
+    background-color: #F8F8F8;
+}
+
+.letter-size div{
+    border: 1px solid gray;
+    padding: 0 8px;
+    border-radius: 8px;
+}
+.letter-size div:nth-child(1){
+    font-size: 15px;
+}
+.letter-size div:nth-child(2){
+    font-size: 16px;
+}
+.letter-size div:nth-child(3){
+    font-size: 20px;
+}

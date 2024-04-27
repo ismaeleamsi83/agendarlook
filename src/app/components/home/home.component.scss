@@ -1,6 +1,10 @@
 .header-div{
     //background-color: blue;
     //width: 220px;
-    height: 90vh;
+    height: 100%;
     display: flex;
+
+    .main-content{
+        width: 100%;
+    }
 }
