@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-configuration',
@@ -7,6 +7,20 @@ import { Component } from '@angular/core';
   templateUrl: './configuration.component.html',
   styleUrl: './configuration.component.scss'
 })
-export class ConfigurationComponent {
+export class ConfigurationComponent implements OnInit {
+
+
+  inputSelected = [false, false, false, false, false, false, false, false]; 
+
+  constructor(){}
+
+  ngOnInit(): void {
+    
+  }
+
+
+  editInput(id: number){
+    this.inputSelected[id] = !this.inputSelected[id];
+  }
 
 }
